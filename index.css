@@ -162,7 +162,7 @@ input[type=email]{
     font-size: 1rem;
 }
 
-i{
+.figures{
     border: 1px solid #1179BF;
     border-radius: 50%;
     color: #1179BF;
