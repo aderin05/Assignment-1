@@ -1,0 +1,314 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap);
+
+*{
+    font-family: 'Lato', sans-serif;  
+}
+
+body{
+    margin: 0 25px;
+    background-color: #F5F8FA;
+    font-family: 'Lato', sans-serif;
+}
+/* header and nav section */
+header{
+    padding: 5px 0;
+    border-bottom: 1px solid #979797;
+}
+
+header ul{
+    display: flex;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+header ul li{
+    color: #1D2C3C;
+    font-family: lato;
+}
+
+header a{
+    color: #1D2C3C;
+    text-decoration: none;
+    padding: 10px ;
+}
+
+header ul li:first-child{
+    flex-grow: 7;
+    justify-content: flex-start;
+    font-weight: 700;
+}
+
+header ul li:not(:first-child){
+    flex-grow: 1;
+    text-align: right;
+    font-weight: 400;
+}
+
+.links,  header  a:hover{
+    border: 1px solid #646E7A;
+    margin-left: 20px;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.menu{
+    display: none;
+}
+
+/* main section of the body */
+
+main{
+    font-family: 'Lato' sans-serif;
+}
+
+main > div{
+    width: 50%;
+    display: flex;
+    margin: 50px auto 20px;
+    font-size: 0.9rem;
+}
+
+/* code applying to the first half of the main section */
+
+main > div div:first-child{
+    background-color: #fff;
+    color: #1D2C3C;
+    width: 70%;
+    padding: 30px;
+}
+
+main > div div:last-child{
+    background-color: #1179BF;
+    color: #fff;
+    width: 30%;
+    padding: 30px;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 24px 0;
+    font-weight: 700;
+}
+
+.one{
+    width: 1.2rem;
+}
+
+.two{
+    width: 1.4rem;
+}
+
+input{
+    background-color: #EDEFF2;
+    border: 1px solid #CCD0D2;
+    padding: 4px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+input[type=email]{
+    width: 150%;
+    display: block;
+}
+
+.button1{
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    background-color: #038E7D;
+    border: 1px solid #249D6D;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 24px;
+}
+
+.contact{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.contact a{
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.button2{
+    margin: 0 auto;
+    background-color: #566473;
+    border: none; 
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 4px;
+}
+
+.button2 > span{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+i{
+    border: 1px solid #1179BF;
+    border-radius: 50%;
+    color: #1179BF;
+    padding: 2px 4px;
+    text-align: center;
+    font-weight: 1000;
+    margin-right: 4px;
+}
+
+/* code applying to the second half of the main section */
+
+div p:first-child{
+    font-weight: 700;
+}
+
+.amount{
+    font-size: 1.6rem;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.list{
+    margin: 28px 0;
+}
+
+.list li{
+    padding: 8px 0;
+}
+
+img{
+    width: 0.8rem;
+    margin-right: 8px;
+}
+
+div a{
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+hr{
+    margin-top: 24px;
+    border-bottom: 1px solid #CCD0D2;
+    border-top: none;
+}
+
+.ftp{
+    margin-top: 24px;
+}
+
+/* last part of the body outside of the main */
+
+.terms-of-service{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.terms-of-service > a{
+    color: #31708F;
+    text-decoration: none;
+}
+
+@media (max-width : 924px) {
+    .links,  header  a:hover{
+        border: 1px solid #646E7A;
+        margin-left: 10px;
+        text-align: center;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+
+    main > div{
+        width: 70%;
+        display: flex;
+        margin: 50px auto 20px;
+        font-size: 0.9rem;
+    }
+
+    .form{
+        display: block;
+    }
+
+    .form span, input{
+        display: block;
+    }
+    input, input[type=email]{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width : 675px){
+    li a{
+       font-size: 0.8rem; 
+       font-weight: 400;
+    }
+
+    .links,  header  a:hover{
+        border: 1px solid #646E7A;
+        text-align: center;
+        padding: 10px 2px;
+        border-radius: 5px;
+    }
+
+    main > div{
+        width: 90%;
+        display: flex;
+        margin: 50px auto 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width : 530px){
+    .nav-links{
+        display: none;
+    }
+    
+    main > div{
+        display: block;
+        margin: 50px auto 20px;
+        font-size: 0.9rem;
+    }
+
+    main > div div:first-child, main > div div:last-child{
+        display: block;
+        width: 80%;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width : 555px){
+    header ul{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin-right: 0;
+        width: 2rem;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
