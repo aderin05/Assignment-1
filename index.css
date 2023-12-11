@@ -82,6 +82,7 @@ main > div div:first-child{
     color: #1D2C3C;
     width: 70%;
     padding: 30px;
+    border-radius: 8px 0 0 8px;
 }
 
 main > div div:last-child{
@@ -89,6 +90,7 @@ main > div div:last-child{
     color: #fff;
     width: 30%;
     padding: 30px;
+    border-radius: 0 8px 8px 0;
 }
 
 .form{
