@@ -10,17 +10,13 @@ body{
     font-family: 'Lato', sans-serif;
 }
 /* header and nav section */
-header{
-    padding: 5px 0;
-    border-bottom: 1px solid #979797;
-}
-
 header ul{
     display: flex;
 }
 
 ul{
-    padding: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #979797;
 }
 
 li{
@@ -42,6 +38,10 @@ header ul li:first-child{
     flex-grow: 7;
     justify-content: flex-start;
     font-weight: 700;
+}
+
+.wppusher-logo{
+    width: 8rem;
 }
 
 header ul li:not(:first-child){
@@ -294,7 +294,7 @@ hr{
     }
 }
 
-@media (max-width : 555px){
+@media (max-width : 610px){
     header ul{
         display: block;
     }
