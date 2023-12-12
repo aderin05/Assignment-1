@@ -180,6 +180,7 @@ input[type=email]{
 }
 
 .button2{
+    display: block;
     margin: 0 auto;
     background-color: #566473;
     border: none; 
@@ -192,16 +193,6 @@ input[type=email]{
     font-family: cursive;
     font-weight: bold;
     font-size: 1rem;
-}
-
-.figures{
-    border: 1px solid #1179BF;
-    border-radius: 50%;
-    color: #1179BF;
-    padding: 2px 4px;
-    text-align: center;
-    font-weight: 1000;
-    margin-right: 4px;
 }
 
 /* code applying to the second half of the main section */
@@ -226,8 +217,13 @@ div p:first-child{
     padding: 8px 0;
 }
 
-img{
+li img, .contact img{
     width: 0.8rem;
+    margin-right: 8px;
+}
+
+fieldset img{
+    width: 1.4rem;
     margin-right: 8px;
 }
 
@@ -328,19 +324,34 @@ hr{
 
 @media (max-width : 610px){
     header ul{
-        display: block;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 11;
+        border: none;
     }
     .nav-links{
         display: none;
+        text-align: center;
     }
     .menu{
         display: block;
         margin-right: 0;
         width: 2rem;
+        flex-grow: 1;
     }
     nav{
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid #979797;
+    }
+    
+    li{
+        list-style: none;
+    }
+    
+    header ul li img{
+        width: 150px;
     }
 
 }

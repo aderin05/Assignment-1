@@ -1,10 +1,12 @@
-const menu = document.querySelector(".menu");
-const navLinks = document.querySelector(".nav-links");
+const menu =  document.querySelector(".menu");
+const navLinks = document.getElementsByClassName(".nav-links");
+console.log(navLinks);
 
-menu.addEventListener("click", () =>{
-   navLinks.style.display = "block";
-   navLinks.style.textAlign = "center";
-})
+// menu.addEventListener("click", () => {
+//     navLinks.style.display = "block";
+// })
+
+menu.onclick
 
  
 
