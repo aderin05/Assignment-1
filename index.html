@@ -49,6 +49,35 @@
             </span>
             <hr>
             <fieldset><span class="figures">2</span>Your Payment Information</fieldset>
+            <div class="card">
+              <input type="text" name="number" id="number" maxlength="16" placeholder="0000 0000 0000 0000">
+      
+              <input list="months" id="month" placeholder="MM">
+              <datalist id="months">
+                  <option value="01">
+                  <option value="02">
+                  <option value="03">
+                  <option value="04">
+                  <option value="05">
+                  <option value="06">
+                  <option value="07">
+                  <option value="08">
+                  <option value="09">
+                  <option value="10">
+                  <option value="11">
+                  <option value="12">                                           
+              </datalist>
+              <span>/</span>
+              <input list="years" id="year" placeholder="YY">
+              <datalist id="years">
+                  <option value="23">
+                  <option value="24">
+                  <option value="25">
+                  <option value="26">
+                  <option value="27">                                          
+              </datalist>
+              <input type="password" name="CVC" id="CVC" placeholder="CVC" maxlength="3">
+          </div>
             <hr>
           </legend>
           <button class="button1" type="submit">Buy WP Pusher</button>

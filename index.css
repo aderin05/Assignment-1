@@ -127,6 +127,36 @@ input[type=email]{
     display: block;
 }
 
+.card{
+    height: 25px;
+    padding: 5px 0 0 5px;
+    width: 340px;
+    background-color: #EDEFF2;
+    border-radius: 4px;
+}
+
+#month, #year, datalist, option{
+    width: 40px;
+    border: none;
+    padding: 0;
+    background-color: #EDEFF2;
+    margin: 0;
+}
+
+#CVC{
+    width: 50px;
+}
+
+#CVC, input[type=text]{
+    border: none;
+    background-color: #EDEFF2;
+    margin: 0;
+}
+
+#month:focus, #year:focus, #CVC:focus{
+    outline: none;
+}
+
 .button1{
     width: 100%;
     padding: 8px;
