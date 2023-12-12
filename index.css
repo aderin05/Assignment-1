@@ -65,6 +65,7 @@ main > div{
     display: flex;
     margin: 50px auto 20px;
     font-size: 0.9rem;
+    box-shadow: 5px 5px 10px #CCD0D2;
 }
 
 /* code applying to the first half of the main section */
@@ -139,7 +140,7 @@ input[type=email]{
     width: 50px;
 }
 
-#CVC, input[type=text]{
+#CVC, .card input[type=text]{
     border: none;
     background-color: #EDEFF2;
     margin: 0;
@@ -280,6 +281,22 @@ hr{
         width: 80%;
         margin-bottom: 10px;
     }
+
+    .card{
+        height: unset;
+        width: unset;
+        background-color: #fff;
+    }
+    
+    #month, #year{
+        width: 20%;
+        margin: 10px 0;
+        display: inline;
+    }
+    
+    #CVC{
+        width: 50px;
+    }
 }
 
 @media (max-width : 675px){
@@ -303,21 +320,21 @@ hr{
     }
 }
 
-@media (max-width : 530px){
-     main > div{
+@media (max-width : 610px){
+    main > div{
         display: block;
         margin: 50px auto 20px;
         font-size: 0.9rem;
+        box-shadow: none;
     }
 
     main > div div:first-child, main > div div:last-child{
         display: block;
         width: 80%;
         margin: 30px 0;
+        border-radius: 6px;
     }
-}
 
-@media (max-width : 610px){
     nav{
         display: flex;
         justify-content: space-between;
