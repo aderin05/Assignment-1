@@ -343,13 +343,16 @@ hr{
     }
 
     header .nav-ul{
+        display: none;
         width: 100%;
         position: absolute;
         left: 0;
         top: 100%;
         background-color: #fff;
         box-shadow: 2px 3px 8px grey;
-        display: none;
+    }
+    .show{
+        display: block!important;
     }
 
     .nav-links{
@@ -372,8 +375,6 @@ hr{
         width: 150px;
     }
 
-    .show{
-        display: flex;
-    }
+    
 
 }

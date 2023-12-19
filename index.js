@@ -4,7 +4,6 @@ console.log(navLinks);
 menu.addEventListener("click", (e) => {
     e.preventDefault();
     navLinks.classList.toggle("show");
-    console.log(navLinks);
 })
 
 
